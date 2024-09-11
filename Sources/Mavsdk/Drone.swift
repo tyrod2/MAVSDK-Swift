@@ -1,6 +1,8 @@
 import Foundation
 import RxSwift
+#if !targetEnvironment(simulator)
 import MavsdkServer
+#endif
 
 public class Drone {
     private let scheduler: SchedulerType
